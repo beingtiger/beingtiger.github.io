@@ -35,9 +35,9 @@
 				  rgb(183,0,255)3%,transparent 3%,transparent 8%),
 				  rgb(216,118,255) repeating-linear-gradient(-45deg,rgb(183,0,255,0.8) 0%,rgb(183,0,255,0.5) 5%,transparent 5%,transparent 10%);*/
 		 background-image: url("../img/3.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: cover;
+         background-repeat: no-repeat;
+        background-size: cover;
+        background-size: cover; 
 	    height: 100vh;
 	    text-align: center;
 	    background-size: cover;
@@ -55,20 +55,25 @@
 
 	.profile-card{
 		width: 300px;
-		border-radius: 2px;
+		border-radius: 5px;
+		border: initial;
 		overflow: hidden;
-		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+		box-shadow: 0px 8px  20px -6px rgba(148, 146, 146, 0.973);
+		border: 1px solid rgb(29, 28, 28);
 		position: relative;
 		margin: auto;
-		background: rgba(255,255,255,1);
+		background: rgb(48, 46, 46);
+		/* z-index: 30px; */
 		top: 50%;
 		transform: translateY(-50%);
 	}
+	
+
 
 	.profile-card header{
 		display: block;
 		position: relative;
-		background: rgba(255,255,255,1);
+		background: rgb(32, 32, 32);
 		text-align: center;
 		padding: 30px 0 20px;
 		z-index: 1;
@@ -106,10 +111,22 @@
 		border-radius: 100%;
 		overflow: hidden;
 		width: 150px;
-		/* border: 1px solid rgba(255,255,255,.5); */
-		box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+		animation: shadow-pulse-big 1s infinite;
+		
 	}
-
+ p{
+	 color:white;
+ }
+	@keyframes shadow-pulse-big
+	{
+		0% {
+			box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+		}
+		100% {
+			box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+		}
+	}
+	
 	.profile-card header h1{
 		font-weight: 200;
 		font-size: 42px;
